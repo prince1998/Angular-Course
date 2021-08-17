@@ -40,3 +40,28 @@ Component = Template + Class + Metadata
 ng generate component component_name \
 OR
 ng g c component_name
+
+![](binding.png)
+
+$0 refers to current event
+$0.getAttribute('value') returns the HTML set value
+$0.value returns the DOM value (current value)
+
+![](two-way-binding.png)
+
+Parent component sends data to Child component using Selectors defined in Child Component
+Child component sends data to Parent component using Events defined in Child Component
+
+To create a service:
+ng g s
+
+![](notes-imgs/http-mechanism.png)
+
+### Creating a component with inline template and inline style
+
+ng generate component component_name -it -is \ 
+OR
+ng g c component_name -it -is
+
+it: Inline template \ 
+is: Inline style

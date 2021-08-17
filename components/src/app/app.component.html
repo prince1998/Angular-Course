@@ -1,0 +1,10 @@
+<div style = "text-align: center;">
+  <h1>
+    {{message}}
+    Welcome to {{title}}
+  </h1>
+</div>
+<!-- name defined in app.component.ts
+parentData referenced in test.component.ts -->
+<app-test (childEvent) = "message = $event" [parentData] = "name" [parentData2] = "name"> </app-test>
+
